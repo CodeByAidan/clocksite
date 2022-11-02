@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#b492cc">
+    <meta name="author" content="Oussama Kamili">
+    <meta name="description" content="javascript clock that return the time and some informations about the current day.">
+    <title>Javascript Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="shortcut icon" href="./imgs/favicon.png" type="image/png"> -->
+    <script src="./script.js" defer></script>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+</head>
+<body>
+    <section id="container">
+        <div id="clock">
+            <div class="num n12"><p id="num12">12</p></div>
+            <div class="num n1"><p id="num1">1</p></div>
+            <div class="num n2"><p id="num2">2</p></div>
+            <div class="num n3"><p id="num3">3</p></div>
+            <div class="num n4"><p id="num4">4</p></div>
+            <div class="num n5"><p id="num5">5</p></div>
+            <div class="num n6"><p id="num6">6</p></div>
+            <div class="num n7"><p id="num7">7</p></div>
+            <div class="num n8"><p id="num8">8</p></div>
+            <div class="num n9"><p id="num9">9</p></div>
+            <div class="num n10"><p id="num10">10</p></div>
+            <div class="num n11"><p id="num11">11</p></div>
+
+            <div id="hours-hand" class="hands">
+                <div id="hour"></div>
+            </div>
+            <div id="minute-hand" class="hands">
+                <div id="minute"></div>
+            </div>
+        </div>
+        <div id="date-info">
+            <h2 id="location"></h2>
+            <h1 id="date-text"></h1>
+            <div id="weather"><img id="weather-icon"><span id="weather-temp"></span></div>
+        </div>
+    </section>
+</body>
+</html>
