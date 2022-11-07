@@ -38,7 +38,7 @@ const weekDay = (date) => {
   return weekDays[dateIndex];
 };
 
-const monthName = (date) => {
+const monthName = (date) => { 
   const monthNames = [
       "January",
       "February",
@@ -67,7 +67,7 @@ const displayDate = (date) => {
 };
 
 const getUserLocation = async () => {
-  let connection = await fetch("https://ipapi.co/json/");
+  let connection = await fetch("http://ipapi.co/json/");
   if (connection.ok) {
     let response = await connection.json(),
       location = `${response.city}, ${response.country}`;
