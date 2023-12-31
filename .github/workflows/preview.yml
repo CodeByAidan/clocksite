@@ -9,7 +9,7 @@ jobs:
   preview:
     runs-on: ubuntu-latest
     environment:
-      name: preview-${{ github.event.pull_request.number }}
+      name: preview
       url: ${{ steps.deploy.outputs.url }}
     steps:
       - uses: actions/checkout@v3
