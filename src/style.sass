@@ -2,18 +2,18 @@
 
 /* Center the loader */
 #loader
-    position: absolute
-    left: 50%
-    top: 50%
-    z-index: 1
-    width: 120px
-    height: 120px
-    margin: -76px 0 0 -76px
-    border: 16px solid #f3f3f3
-    border-radius: 50%
-    border-top: 16px solid #3498db
-    -webkit-animation: spin 2s linear infinite
-    animation: spin 2s linear infinite
+  position: absolute
+  left: 50%
+  top: 50%
+  z-index: 1
+  width: 120px
+  height: 120px
+  margin: -76px 0 0 -76px
+  border: 16px solid #f3f3f3
+  border-radius: 50%
+  border-top: 16px solid #3498db
+  -webkit-animation: spin 2s linear infinite
+  animation: spin 2s linear infinite
 
 @-webkit-keyframes spin
   0%
@@ -22,18 +22,18 @@
     -webkit-transform: rotate(360deg)
 
 @keyframes spin
-    0%
-        transform: rotate(0deg)
-    100%
-        transform: rotate(360deg)
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
 
 /* Add animation to "page content" */
 .animate-bottom
-    position: relative
-    -webkit-animation-name: animatebottom
-    -webkit-animation-duration: 1s
-    animation-name: animatebottom
-    animation-duration: 1s
+  position: relative
+  -webkit-animation-name: animatebottom
+  -webkit-animation-duration: 1s
+  animation-name: animatebottom
+  animation-duration: 1s
 
 @-webkit-keyframes animatebottom
   from
@@ -44,319 +44,319 @@
     opacity: 1
 
 @keyframes animatebottom
-    from
-        bottom: -100px
-        opacity: 0
-    to
-        bottom: 0
-        opacity: 1
+  from
+    bottom: -100px
+    opacity: 0
+  to
+    bottom: 0
+    opacity: 1
 
 #myDiv
-    display: none
-    text-align: center
+  display: none
+  text-align: center
 
 .hvr-grow-shadow
-    display: inline-block
-    -webkit-transform: perspective(1px) translateZ(0)
-    transform: perspective(1px) translateZ(0)
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0)
-    -webkit-transition-duration: 0.3s
-    transition-duration: 0.3s
-    -webkit-transition-property: box-shadow, transform
-    transition-property: box-shadow, transform
+  display: inline-block
+  -webkit-transform: perspective(1px) translateZ(0)
+  transform: perspective(1px) translateZ(0)
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+  -webkit-transition-duration: 0.3s
+  transition-duration: 0.3s
+  -webkit-transition-property: box-shadow, transform
+  transition-property: box-shadow, transform
 
 .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5)
-    -webkit-transform: scale(1.1)
-    transform: scale(1.1)
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5)
+  -webkit-transform: scale(1.1)
+  transform: scale(1.1)
 
 *
-    margin: 0
-    padding: 0
-    box-sizing: border-box
-    font-family: "Palanquin Dark", sans-serif
-    color: #fff
-    user-select: none
-    -moz-user-select: none
-    -webkit-user-select: none
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: "Palanquin Dark", sans-serif
+  color: #fff
+  user-select: none
+  -moz-user-select: none
+  -webkit-user-select: none
 
 body
---bgColor: #9468b3
-    height: 100vh
-    background-color: var(--bgColor)
-    overflow: auto
-    display: grid
-    place-items: center
+  --bgColor: #9468b3
+  height: 100vh
+  background-color: var(--bgColor)
+  overflow: auto
+  display: grid
+  place-items: center
 
 #container
-    height: 35vw
-    width: 62vw
-    background-color: var(--bgColor)
-    border-radius: 125px
-    border: 5vw solid #fff
-    position: relative
-    min-height: 520px
-    min-width: 930px
-    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.3)
-    padding: 20px
-    display: flex
+  height: 35vw
+  width: 62vw
+  background-color: var(--bgColor)
+  border-radius: 125px
+  border: 5vw solid #fff
+  position: relative
+  min-height: 520px
+  min-width: 930px
+  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.3)
+  padding: 20px
+  display: flex
 
 #container::before
-    content: ""
-    display: block
-    height: 100%
-    width: 100%
-    border: 4.3vw solid #f8f8f8
-    border-radius: 115px
-    position: absolute
-    top: -4.3vw
-    left: -4.3vw
-    box-shadow: 0 0 1px #aaa
+  content: ""
+  display: block
+  height: 100%
+  width: 100%
+  border: 4.3vw solid #f8f8f8
+  border-radius: 115px
+  position: absolute
+  top: -4.3vw
+  left: -4.3vw
+  box-shadow: 0 0 1px #aaa
 
 #container::after
-    content: ""
-    display: block
-    height: 1.7vw
-    width: 1.7vw
-    border-radius: 50%
-    background-color: #efefef
-    position: absolute
-    right: 5vw
-    top: -3vw
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1)
+  content: ""
+  display: block
+  height: 1.7vw
+  width: 1.7vw
+  border-radius: 50%
+  background-color: #efefef
+  position: absolute
+  right: 5vw
+  top: -3vw
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1)
 
 /* start clock styling */
 #clock
-    height: 100%
-    width: 45.91%
-    margin-left: 25px
-    position: relative
-    display: grid
-    place-items: center
-    max-width: 450px
-    max-height: 450px
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5)
+  height: 100%
+  width: 45.91%
+  margin-left: 25px
+  position: relative
+  display: grid
+  place-items: center
+  max-width: 450px
+  max-height: 450px
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5)
 
 #clock::before
-    content: ""
-    display: block
-    height: 0.8vw
-    width: 0.8vw
-    background-color: #ddd
-    border-radius: 50%
-    position: absolute
-    z-index: 10
-    min-width: 12px
-    min-height: 12px
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)
+  content: ""
+  display: block
+  height: 0.8vw
+  width: 0.8vw
+  background-color: #ddd
+  border-radius: 50%
+  position: absolute
+  z-index: 10
+  min-width: 12px
+  min-height: 12px
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)
 
 .num
-    height: 100%
-    position: absolute
-    text-align: center
---angle: 0
-    transform: rotate(var(--angle))
+  height: 100%
+  position: absolute
+  text-align: center
+  --angle: 0
+  transform: rotate(var(--angle))
 
 .n11
---angle: 330deg
+  --angle: 330deg
 
 #num11
---counter-angle: -330deg
+  --counter-angle: -330deg
 
 .n10
---angle: 300deg
+  --angle: 300deg
 
 #num10
---counter-angle: -300deg
+  --counter-angle: -300deg
 
 .n9
---angle: 270deg
+  --angle: 270deg
 
 #num9
---counter-angle: -270deg
+  --counter-angle: -270deg
 
 .n8
---angle: 240deg
+  --angle: 240deg
 
 #num8
---counter-angle: -240deg
+  --counter-angle: -240deg
 
 .n7
---angle: 210deg
+  --angle: 210deg
 
 #num7
---counter-angle: -210deg
+  --counter-angle: -210deg
 
 .n6
---angle: 180deg
+  --angle: 180deg
 
 #num6
---counter-angle: -180deg
+  --counter-angle: -180deg
 
 .n5
---angle: 150deg
+  --angle: 150deg
 
 #num5
---counter-angle: -150deg
+  --counter-angle: -150deg
 
 .n4
---angle: 120deg
+  --angle: 120deg
 
 #num4
---counter-angle: -120deg
+  --counter-angle: -120deg
 
 .n3
---angle: 90deg
+  --angle: 90deg
 
 #num3
---counter-angle: -90deg
+  --counter-angle: -90deg
 
 .n2
---angle: 60deg
+  --angle: 60deg
 
 #num2
---counter-angle: -60deg
+  --counter-angle: -60deg
 
 .n1
---angle: 30deg
+  --angle: 30deg
 
 #num1
---counter-angle: -30deg
+  --counter-angle: -30deg
 
 .num > p
---counter-angle: 0
-    transform: rotate(var(--counter-angle))
-    font-size: 2.2vw
+  --counter-angle: 0
+  transform: rotate(var(--counter-angle))
+  font-size: 2.2vw
 
 .hands
-    position: absolute
-    display: flex
-    justify-content: center
+  position: absolute
+  display: flex
+  justify-content: center
 
 #hours-hand
-    height: 10vw
-    min-height: 130px
+  height: 10vw
+  min-height: 130px
 
 #hour
-    width: 8px
-    height: 5vw
-    background-color: #fff
-    border-radius: 5px
-    transform-origin: bottom center
-    min-height: 65px
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5)
+  width: 8px
+  height: 5vw
+  background-color: #fff
+  border-radius: 5px
+  transform-origin: bottom center
+  min-height: 65px
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5)
 
 #minute-hand
-    height: 14vw
-    min-height: 200px
+  height: 14vw
+  min-height: 200px
 
 #minute
-    width: 5px
-    height: 7vw
-    background-color: #fff
-    border-radius: 5px
-    transform-origin: bottom center
-    min-height: 100px
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5)
+  width: 5px
+  height: 7vw
+  background-color: #fff
+  border-radius: 5px
+  transform-origin: bottom center
+  min-height: 100px
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5)
 
 /* end clock styling */
 #date-info
-    height: 100%
-    width: 50%
-    display: flex
-    justify-content: center
-    align-items: center
-    flex-direction: column
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5)
-    z-index: 14
+  height: 100%
+  width: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5)
+  z-index: 14
 
 #date-text
-    font-size: 3.5em
-    line-height: 1em
+  font-size: 3.5em
+  line-height: 1em
 
 #weather
-    margin-right: 15px
-    display: none
+  margin-right: 15px
+  display: none
 
 #weather-icon
-    width: 5vw
-    height: 5vw
-    max-width: 100px
-    max-height: 100px
-    min-width: 85px
-    min-height: 85px
+  width: 5vw
+  height: 5vw
+  max-width: 100px
+  max-height: 100px
+  min-width: 85px
+  min-height: 85px
 
 #weather-temp
-    font-size: 3em
-    cursor: pointer
+  font-size: 3em
+  cursor: pointer
 
 @media all and (max-width: 1450px)
-#container
+  #container
     border: 70px solid #fff
     min-width: 850px
 
-#container::after
+  #container::after
     height: 25px
     width: 25px
     right: 80px
     top: -45px
 
-#container::before
+  #container::before
     border: 60px solid #f8f8f8
     top: -60px
     left: -60px
 
-#clock
+  #clock
     width: 55.74%
     margin-left: 0
 
-.num > p
+  .num > p
     font-size: 34px
 
-#hour
+  #hour
     width: 6px
 
-#minute
+  #minute
     width: 4px
 
-#date-text
+  #date-text
     font-size: 2.5em
 
 @media all and (max-width: 900px)
-#container::after, #container::before
+  #container::after, #container::before
     display: none
 
-#container
+  #container
     border: none
     box-shadow: none
     align-items: center
 
-#clock
+  #clock
     max-height: 320px
     max-width: 350px
     margin-right: 4vw
 
 @media all and (max-width: 750px)
-#container
+  #container
     min-width: auto
     height: 100vh
     width: 100vw
     flex-direction: column
     padding: 10px
 
-#clock
+  #clock
     margin: auto
     min-height: 275px
 
-#date-info
+  #date-info
     text-align: center
     margin: auto
 
 /* mouse hover animation over any element */
 @keyframes hover
-    0%
-        transform: scale(1)
-    50%
-        transform: scale(1.1)
-    100%
-        transform: scale(1)
+  0%
+    transform: scale(1)
+  50%
+    transform: scale(1.1)
+  100%
+    transform: scale(1)
