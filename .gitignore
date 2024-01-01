@@ -136,3 +136,7 @@ dist
 deploy.bat
 preview.bat
 .env
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map

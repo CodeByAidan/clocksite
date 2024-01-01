@@ -11,16 +11,30 @@
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
-@keyframes spin {
+
+@-webkit-keyframes spin {
   0% {
-    transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
   }
+
   100% {
-    transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
   }
 }
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
 /* Add animation to "page content" */
 .animate-bottom {
   position: relative;
@@ -29,16 +43,31 @@
   animation-name: animatebottom;
   animation-duration: 1s;
 }
-@keyframes animatebottom {
+
+@-webkit-keyframes animatebottom {
   from {
-    bottom: -100px;
-    opacity: 0;
+      bottom: -100px;
+      opacity: 0;
   }
+
   to {
-    bottom: 0;
-    opacity: 1;
+      bottom: 0px;
+      opacity: 1;
   }
 }
+
+@keyframes animatebottom {
+  from {
+      bottom: -100px;
+      opacity: 0;
+  }
+
+  to {
+      bottom: 0;
+      opacity: 1;
+  }
+}
+
 #myDiv {
   display: none;
   text-align: center;
@@ -46,14 +75,19 @@
 
 .hvr-grow-shadow {
   display: inline-block;
+  -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
 }
-
-.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+.hvr-grow-shadow:hover,
+.hvr-grow-shadow:focus,
+.hvr-grow-shadow:active {
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -67,7 +101,6 @@
   -moz-user-select: none;
   -webkit-user-select: none;
 }
-
 body {
   --bgColor: #9468b3;
   height: 100vh;
@@ -76,7 +109,6 @@ body {
   display: grid;
   place-items: center;
 }
-
 #container {
   height: 35vw;
   width: 62vw;
@@ -90,7 +122,6 @@ body {
   padding: 20px;
   display: flex;
 }
-
 #container::before {
   content: "";
   display: block;
@@ -103,7 +134,6 @@ body {
   left: -4.3vw;
   box-shadow: 0 0 1px #aaa;
 }
-
 #container::after {
   content: "";
   display: block;
@@ -118,6 +148,7 @@ body {
 }
 
 /* start clock styling */
+
 #clock {
   height: 100%;
   width: 45.91%;
@@ -129,7 +160,6 @@ body {
   max-height: 450px;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
-
 #clock::before {
   content: "";
   display: block;
@@ -143,7 +173,6 @@ body {
   min-height: 12px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-
 .num {
   height: 100%;
   position: absolute;
@@ -151,11 +180,9 @@ body {
   --angle: 0;
   transform: rotate(var(--angle));
 }
-
 .n11 {
   --angle: 330deg;
 }
-
 #num11 {
   --counter-angle: -330deg;
 }
@@ -163,7 +190,6 @@ body {
 .n10 {
   --angle: 300deg;
 }
-
 #num10 {
   --counter-angle: -300deg;
 }
@@ -171,7 +197,6 @@ body {
 .n9 {
   --angle: 270deg;
 }
-
 #num9 {
   --counter-angle: -270deg;
 }
@@ -179,7 +204,6 @@ body {
 .n8 {
   --angle: 240deg;
 }
-
 #num8 {
   --counter-angle: -240deg;
 }
@@ -187,7 +211,6 @@ body {
 .n7 {
   --angle: 210deg;
 }
-
 #num7 {
   --counter-angle: -210deg;
 }
@@ -195,7 +218,6 @@ body {
 .n6 {
   --angle: 180deg;
 }
-
 #num6 {
   --counter-angle: -180deg;
 }
@@ -203,7 +225,6 @@ body {
 .n5 {
   --angle: 150deg;
 }
-
 #num5 {
   --counter-angle: -150deg;
 }
@@ -211,7 +232,6 @@ body {
 .n4 {
   --angle: 120deg;
 }
-
 #num4 {
   --counter-angle: -120deg;
 }
@@ -219,7 +239,6 @@ body {
 .n3 {
   --angle: 90deg;
 }
-
 #num3 {
   --counter-angle: -90deg;
 }
@@ -227,7 +246,6 @@ body {
 .n2 {
   --angle: 60deg;
 }
-
 #num2 {
   --counter-angle: -60deg;
 }
@@ -235,7 +253,6 @@ body {
 .n1 {
   --angle: 30deg;
 }
-
 #num1 {
   --counter-angle: -30deg;
 }
@@ -251,12 +268,10 @@ body {
   display: flex;
   justify-content: center;
 }
-
 #hours-hand {
   height: 10vw;
   min-height: 130px;
 }
-
 #hour {
   width: 8px;
   height: 5vw;
@@ -266,12 +281,10 @@ body {
   min-height: 65px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
-
 #minute-hand {
   height: 14vw;
   min-height: 200px;
 }
-
 #minute {
   width: 5px;
   height: 7vw;
@@ -281,8 +294,8 @@ body {
   min-height: 100px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
-
 /* end clock styling */
+
 #date-info {
   height: 100%;
   width: 50%;
@@ -293,17 +306,14 @@ body {
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   z-index: 14;
 }
-
 #date-text {
   font-size: 3.5em;
   line-height: 1em;
 }
-
 #weather {
   margin-right: 15px;
   display: none;
 }
-
 #weather-icon {
   width: 5vw;
   height: 5vw;
@@ -312,7 +322,6 @@ body {
   min-width: 85px;
   min-height: 85px;
 }
-
 #weather-temp {
   font-size: 3em;
   cursor: pointer;
@@ -352,7 +361,8 @@ body {
   }
 }
 @media all and (max-width: 900px) {
-  #container::after, #container::before {
+  #container::after,
+  #container::before {
     display: none;
   }
   #container {
@@ -383,6 +393,7 @@ body {
     margin: auto;
   }
 }
+
 /* mouse hover animation over any element */
 @keyframes hover {
   0% {
@@ -394,4 +405,4 @@ body {
   100% {
     transform: scale(1);
   }
-}/*# sourceMappingURL=style.css.map */
+}
