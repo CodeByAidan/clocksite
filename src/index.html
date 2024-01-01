@@ -1,138 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-!
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#b492cc" />
     <meta name="description"
-    content="javascript clock that return the time and some informations about the current day." />
-    <meta property="description" content="javascript clock that return the time and some informations about the current day." />
+        content="javascript clock that return the time and some informations about the current day." />
+    <meta property="description"
+        content="javascript clock that return the time and some informations about the current day." />
     <meta property="og:image" content="./imgs/preview.png" />
     <meta property="og:title" content="Javascript Clock" />
-    <meta property="og:description" content="javascript clock that return the time and some informations about the current day." />
+    <meta property="og:description"
+        content="javascript clock that return the time and some informations about the current day." />
     <meta property="og:url" content="https://clocksite.vercel.app/" />
     <title>Javascript Clock</title>
     <link rel="stylesheet" href="style.css" />
     <script src="./script.js" defer></script>
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <body onload="myFunction()" style="margin: 0">
-            <div id="loader"></div>
-            <div style="display: none" id="myDiv" class="animate-bottom">
-                <div class="content">
-                    <!-- class hvr-grow-shadow over all elements in here -->
-                    <section id="container">
-                        <div id="clock">
-                            <div class="num n12">
-                                <p id="num12">12</p>
-                            </div>
-                            <div class="num n1">
-                                <p id="num1">1</p>
-                            </div>
-                            <div class="num n2">
-                                <p id="num2">2</p>
-                            </div>
-                            <div class="num n3">
-                                <p id="num3">3</p>
-                            </div>
-                            <div class="num n4">
-                                <p id="num4">4</p>
-                            </div>
-                            <div class="num n5">
-                                <p id="num5">5</p>
-                            </div>
-                            <div class="num n6">
-                                <p id="num6">6</p>
-                            </div>
-                            <div class="num n7">
-                                <p id="num7">7</p>
-                            </div>
-                            <div class="num n8">
-                                <p id="num8">8</p>
-                            </div>
-                            <div class="num n9">
-                                <p id="num9">9</p>
-                            </div>
-                            <div class="num n10">
-                                <p id="num10">10</p>
-                            </div>
-                            <div class="num n11">
-                                <p id="num11">11</p>
-                            </div>
+    <body onload="myFunction()" style="margin: 0">
+        <div id="loader"></div>
+        <div style="display: none" id="myDiv" class="animate-bottom">
+            <div class="content">
+                <!-- class hvr-grow-shadow over all elements in here -->
+                <section id="container">
+                    <div id="clock">
+                        <div class="num n12">
+                            <p id="num12">12</p>
+                        </div>
+                        <div class="num n1">
+                            <p id="num1">1</p>
+                        </div>
+                        <div class="num n2">
+                            <p id="num2">2</p>
+                        </div>
+                        <div class="num n3">
+                            <p id="num3">3</p>
+                        </div>
+                        <div class="num n4">
+                            <p id="num4">4</p>
+                        </div>
+                        <div class="num n5">
+                            <p id="num5">5</p>
+                        </div>
+                        <div class="num n6">
+                            <p id="num6">6</p>
+                        </div>
+                        <div class="num n7">
+                            <p id="num7">7</p>
+                        </div>
+                        <div class="num n8">
+                            <p id="num8">8</p>
+                        </div>
+                        <div class="num n9">
+                            <p id="num9">9</p>
+                        </div>
+                        <div class="num n10">
+                            <p id="num10">10</p>
+                        </div>
+                        <div class="num n11">
+                            <p id="num11">11</p>
+                        </div>
 
-                            <div id="hours-hand" class="hands">
-                                <div id="hour"></div>
-                            </div>
-                            <div id="minute-hand" class="hands">
-                                <div id="minute"></div>
+                        <div id="hours-hand" class="hands">
+                            <div id="hour"></div>
+                        </div>
+                        <div id="minute-hand" class="hands">
+                            <div id="minute"></div>
+                        </div>
+                    </div>
+                    <div id="date-info">
+                        <div class="hvr-grow-shadow">
+                            <h2 id="location"></h2>
+                        </div>
+                        <div class="hvr-grow-shadow">
+                            <h1 id="date-text"></h1>
+                        </div>
+                        <div class="hvr-grow-shadow">
+                            <div id="weather">
+                                <img id="weather-icon" alt="Weather Icon" /><span id="weather-temp"></span>
                             </div>
                         </div>
-                        <div id="date-info">
+                        <footer>
+                            <!-- <script type="text/javascript">
+                                setInterval(() => {
+                                    DisplayCurrentTime();
+                                }, 1);
+                                function DisplayCurrentTime() {
+                                    var date = new Date();
+                                    var hours =
+                                        date.getHours() > 12
+                                            ? date.getHours() - 12
+                                            : date.getHours();
+                                    var am_pm = date.getHours() >= 12 ? "PM" : "AM";
+                                    hours = hours < 10 ? "0" + hours : hours;
+                                    var minutes =
+                                        date.getMinutes() < 10
+                                            ? "0" + date.getMinutes()
+                                            : date.getMinutes();
+                                    var seconds =
+                                        date.getSeconds() < 10
+                                            ? "0" + date.getSeconds()
+                                            : date.getSeconds();
+                                    time = hours + ":" + minutes + ":" + seconds + " " + am_pm;
+                                    var lblTime = document.getElementById("lblTime");
+                                    lblTime.innerHTML = time;
+                                }
+                            </script> -->
                             <div class="hvr-grow-shadow">
-                                <h2 id="location"></h2>
+                                <span id="lblTime"></span>
                             </div>
+                            <br>
                             <div class="hvr-grow-shadow">
-                                <h1 id="date-text"></h1>
+                                <div id="last-modified"></div>
                             </div>
-                            <div class="hvr-grow-shadow">
-                                <div id="weather">
-                                    <img id="weather-icon" alt="Weather Icon" /><span id="weather-temp"></span>
-                                </div>
-                            </div>
-                            <footer>
-                                <script type="text/javascript">
-                                    setInterval(() => {
-                                        DisplayCurrentTime();
-                                    }, 1);
-                                    function DisplayCurrentTime() {
-                                        var date = new Date();
-                                        var hours =
-                                            date.getHours() > 12
-                                                ? date.getHours() - 12
-                                                : date.getHours();
-                                        var am_pm = date.getHours() >= 12 ? "PM" : "AM";
-                                        hours = hours < 10 ? "0" + hours : hours;
-                                        var minutes =
-                                            date.getMinutes() < 10
-                                                ? "0" + date.getMinutes()
-                                                : date.getMinutes();
-                                        var seconds =
-                                            date.getSeconds() < 10
-                                                ? "0" + date.getSeconds()
-                                                : date.getSeconds();
-                                        time = hours + ":" + minutes + ":" + seconds + " " + am_pm;
-                                        var lblTime = document.getElementById("lblTime");
-                                        lblTime.innerHTML = time;
-                                    }
-                                </script>
-                                <div class="hvr-grow-shadow">
-                                    <span id="lblTime"></span>
-                                </div>
-                                <br>
-                                <div class="hvr-grow-shadow">
-                                    <div id="last-modified"></div>
-                                </div>
-                            </footer>
-                        </div>
-                    </section>
-                </div>
+                        </footer>
+                    </div>
+                </section>
             </div>
-            <script>
-                var myVar;
+        </div>
+        <!-- <script>
+            var myVar;
 
-                function myFunction() {
-                    myVar = setTimeout(showPage, 1050);
-                }
+            function myFunction() {
+                myVar = setTimeout(showPage, 1050);
+            }
 
-                function showPage() {
-                    document.getElementById("loader").style.display = "none";
-                    document.getElementById("myDiv").style.display = "block";
-                }
-            </script>
+            function showPage() {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("myDiv").style.display = "block";
+            }
+        </script> -->
     </body>
 
 </html>
