@@ -153,28 +153,3 @@ window.addEventListener("load", () => {
     displayDate(dd);
     printWeatherInfo();
 });
-
-function DisplayCurrentTime() {
-    let date = new Date();
-    let hours = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
-    let am_pm = date.getHours() >= 12 ? "PM" : "AM";
-    hours = hours < 10 ? "0" + hours : hours;
-    let minutes =
-        date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
-    let seconds =
-        date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
-    let time = hours + ":" + minutes + ":" + seconds + " " + am_pm;
-    let lblTime = document.getElementById("lblTime");
-    lblTime.innerHTML = time;
-}
-
-let myVar;
-
-function myFunction() {
-    myVar = setTimeout(showPage, 1000);
-}
-
-function showPage() {
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("myDiv").style.display = "block";
-}
