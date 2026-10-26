@@ -5,7 +5,7 @@
   "resolutions": {
     "**/tar": "7.5.22",
     "**/smol-toml": "1.9.1",
-    "**/js-yaml": "4.3.2",
+    "**/js-yaml": "5.5.0",
     "**/esbuild": "0.28.2",
     "**/@vercel/python-analysis/minimatch": "10.2.6",
     "vercel/undici": "6.29.1",
