@@ -8,8 +8,8 @@
     "**/js-yaml": "4.3.2",
     "**/esbuild": "0.28.2",
     "**/@vercel/python-analysis/minimatch": "10.2.6",
-    "vercel/undici": "6.29.1",
-    "**/@vercel/cli-support/undici": "6.29.1",
-    "**/@vercel/node/undici": "6.29.1"
+    "vercel/undici": "8.12.3",
+    "**/@vercel/cli-support/undici": "8.12.3",
+    "**/@vercel/node/undici": "8.12.3"
   }
 }
