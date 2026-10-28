@@ -7,7 +7,7 @@
     "**/smol-toml": "1.9.1",
     "**/js-yaml": "5.5.0",
     "**/esbuild": "0.28.2",
-    "**/@vercel/python-analysis/minimatch": "10.2.6",
+    "**/@vercel/python-analysis/minimatch": "11.0.3",
     "vercel/undici": "8.12.3",
     "**/@vercel/cli-support/undici": "8.12.3",
     "**/@vercel/node/undici": "8.12.3"
