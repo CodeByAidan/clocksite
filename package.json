@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "vercel": "^65.0.0"
+    "vercel": "^66.0.0"
   },
   "resolutions": {
     "**/tar": "7.5.22",
