@@ -2190,10 +2190,10 @@ tar-stream@3.1.7:
     fast-fifo "^1.2.0"
     streamx "^2.15.0"
 
-tar@7.5.11, tar@7.5.22, tar@^7.4.0:
-  version "7.5.22"
-  resolved "https://registry.yarnpkg.com/tar/-/tar-7.5.22.tgz#a696f998136e71487dc3f869a85bba2c67971ba9"
-  integrity sha512-MFO/QzvtAOmJbkhOaCTvbGcFN9L9b+JunIsDwaKljSOdcLMea3NJ1k9Usz/rjdfSXTq4dfzfeS7W4p4YOAAHeA==
+tar@7.5.11, tar@7.5.22, tar@7.5.24, tar@^7.4.0:
+  version "7.5.24"
+  resolved "https://registry.yarnpkg.com/tar/-/tar-7.5.24.tgz#fc6e4eba45b5ac893f63457f090484df3639b8dc"
+  integrity sha512-to/OxuCk5DeVONcjjODT7aeoRq5NIPPlfPc0tNML+wLlnf6u5BcJz97Uukv3pT3jzorkFhUevylkAiBr+ZmV2w==
   dependencies:
     "@isaacs/fs-minipass" "^4.0.0"
     chownr "^3.0.0"
